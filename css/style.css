@@ -1,0 +1,543 @@
+/*共通*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  font-size: 16px;
+  margin: auto;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*ヘッダー*/
+.header {
+  background-color: #EAD5E0;
+}
+
+.telephone-tap {
+  visibility: hidden;
+}
+
+.contactButton {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  padding: 1em 1em;
+  background: #309965;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.contactButton-wrap a {
+  text-decoration: none;
+}
+
+.contactButton-wrap a:hover {
+  color: #FFF;
+}
+
+.telephone-wrap {
+  margin-top: 10px;
+}
+
+.contactButton:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.img-onayami-area {
+  background-color: #EAD5E0;
+}
+
+.works {
+  background-color: #EFEFEF;
+}
+
+.img-works-area {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.parent-2 {
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.img-tv-area {
+  background-color: #EAD5E0;
+}
+
+th {
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+.table-area-1 {
+  padding-top: 40px;
+}
+
+.table-area-2 {
+  padding-top: 40px;
+}
+
+.table-area-3 {
+  padding-top: 40px;
+}
+
+.img-omakase-area {
+  padding-left: 30px;
+}
+
+.fm-link {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  border-style: double;
+  text-align: center;
+}
+
+.question {
+  background-color: #EFEFEF;
+}
+
+.img-question-area {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.col-md{
+  padding: 0px;
+}
+.question-margin-1 {
+  margin-left: 30px;
+}
+.question-margin-2 {
+  margin-right: 30px;
+}
+/*.question-area {
+  border-style: solid;
+  border-width: thin;
+  background-color: #88D9B1;
+  padding: 5px;
+}*/
+
+.question-area {
+  display: flex;
+  border-style: solid;
+  border-width: thin;
+  list-style: none;
+  padding: 5px;
+  background-color: #88D9B1;
+  margin-bottom: 0px;
+}
+.answer-area {
+  display: flex;
+  border-style: solid;
+  border-width: thin;
+  list-style: none;
+  padding: 5px;
+}
+
+.hiddenTxt {
+  visibility: hidden;
+}
+
+.workingArea {
+  background-color: #EAD5E0;
+}
+
+.workingAreaText {
+  font-size: 16px;
+  margin: 20px;
+  text-align: center;
+}
+.img-workingArea-area {
+  padding-left: 20px;
+}
+.workingAreaImg {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.img-map-area {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.iframe-wrap-2 {
+  display: none;
+}
+.access {
+  background-color: #EFEFEF;
+}
+.img-access-area {
+  padding-left: 20px;
+}
+
+table.company {
+width: 1000px;
+margin: 0 auto;
+border-collapse: separate;
+border-spacing: 0px 15px;
+}
+
+table.company th,
+table.company td {
+padding: 10px;
+}
+
+table.company th {
+background: #309965;
+vertical-align: middle;
+text-align: left;
+width: 100px;
+overflow: visible;
+position: relative;
+color: #fff;
+font-weight: normal;
+}
+
+table.company th:after {
+left: 100%;
+top: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-color: rgba(136, 183, 213, 0);
+border-left-color: #309965;
+border-width: 10px;
+margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+table.company th::after {
+float: right;
+padding: 0;
+left: 30px;
+top: 10px;
+content: " ";
+height: 0;
+width: 0;
+position: relative;
+pointer-events: none;
+border: 10px solid transparent;
+border-left: #309965 10px solid;
+margin-top: -10px;
+}
+}
+
+table.company td {
+background: #f8f8f8;
+width: 360px;
+padding-left: 20px;
+}
+
+.iframe-wrap {
+  position: relative;
+  padding-top: 10%; /* = height ÷ width × 100 */
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
+}
+
+.text-stantion-area {
+  padding: 15px;
+  text-align: center;
+}
+.copyright-2 {
+  display: none;
+}
+.contact {
+  background-color: #EAD5E0;
+}
+.img-contact-area {
+  padding-left: 20px;
+}
+.contact-text-area {
+  padding: 20px;
+}
+
+.contactButton2 {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 1em 1em;
+  text-decoration: none;
+  background: #309965;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.contactButton3 {
+  display: inline-block;
+  padding: 1em 8em;
+  margin: 2em 1em;
+  text-decoration: none;
+  background: #309965;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.contactButton4 {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 1em 1em;
+  text-decoration: none;
+  background: #696969;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+div.privacy {
+  max-width: 400px;
+  height: 100px;
+  background-color: #fff;
+  overflow: scroll;
+  border: solid 1px;
+  font-size: 60%;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  color: #708090;
+}
+
+.contact-ul {
+  list-style: none;
+  margin: 10px;
+}
+
+.msg {
+  margin: 10px;
+}
+
+.contact2 {
+  background-color: #EAD5E0;
+  height: 100vh;
+}
+
+ul {
+  display: -webkit-flex;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.privacy-wrap {
+  width: 60%;
+}
+
+
+/*レスポンシブ調整*/
+@media (max-width: 540px) {
+    .logo-wrap img{
+      width: 300px;
+      height: 76px;
+    }
+    .logo-wrap {
+      text-align: center;
+    }
+    .telephone-wrap img{
+      width: 200px;
+      height: 51px;
+    }
+    .telephone-wrap {
+      text-align: center;
+      margin-top: 0px;
+    }
+    .contactButton {
+      margin-right: 0px;
+    }
+    .contactButton3 {
+      display: inline-block;
+      padding: 1em 2em;
+      margin: 0px;
+    }
+    .contactButton4 {
+      display: inline-block;
+      padding: 1em 1em;
+      margin: 0px;
+    }
+}
+@media (max-width: 767px) {
+    /*　スマホ　*/
+    body{
+      font-size: 8px;
+    }
+    .telephone-tap {
+      visibility: visible;
+      text-align: center;
+      padding-left: 10px;
+    }
+    .children_2 {
+      margin-left: 10px;
+    }
+    .children_4 {
+      margin-left: 10px;
+    }
+    .contactButton {
+      font-size: 8px;
+    }
+    .contactButton3 {
+      display: inline-block;
+      padding: 1em 2em;
+      margin: 0px;
+    }
+    .contactButton4 {
+      display: inline-block;
+      padding: 1em 1em;
+      margin: 0px;
+    }
+    .works {
+      position: relative;
+      font-size: 10px;
+    }
+    .question {
+      font-size: 10px;
+    }
+    .question-margin-1 {
+      margin-right: 30px;
+    }
+    .question-margin-2 {
+      margin-left: 30px;
+    }
+    .hiddenTxt {
+      display: none;
+    }
+    .img-omakase-area {
+      max-width: 50%;
+      max-height: 50%;
+      margin: auto;
+    }
+    .parent-2 {
+      display: block;
+      margin-left: 140px;
+    }
+    .access {
+      font-size: 10px;
+    }
+    .table-area-1 {
+      padding-top: 20px;
+    }
+    .table-area-2 {
+      padding-top: 0px;
+    }
+    .table-area-3 {
+      padding-top: 0px;
+    }
+    table.company {
+    width: auto;
+    }
+
+}
+
+@media (max-width: 991px) {
+  /*　タブレッド（大）　*/
+  .img-omakase-area {
+    padding-top: 40px;
+  }
+
+  table.company {
+    width: auto;
+  }
+
+  .contactButton {
+    margin-top: 15px;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1200px){
+    /*　デスクトップ（大）　*/
+    .telephoneText {
+      font-size: 24px;
+    }
+    .contactButton {
+      font-size: 16px;
+    }
+    .parent-2 {
+      display: flex;
+      list-style: none;
+      margin-left: 50px;
+    }
+}
+
+@media print{
+    .mailContact{
+      display: none;
+    }
+    .img-tv-area {
+      padding: 30px;
+      padding-bottom: 25px;
+    }
+    .img-onayami-area {
+      padding: 30px;
+    }
+    .hiddenTxt {
+      display: none;
+    }
+    .hiddenTxtPrint1 {
+      font-size: 0;
+    }
+    .hiddenTxtPrint1::before {
+      font-size: 16px;
+      content: "　"
+    }
+    .img-works-area {
+      padding-top: 20px;
+    }
+    .header {
+      padding-top: 30px;
+    }
+    .access {
+      padding-bottom: 5px;
+    }
+    .contact {
+      display: none;
+    }
+    .iframe-wrap {
+      display: none;
+    }
+    .copyright-2 {
+      display: block;
+      text-align: center;
+      background-color: #EFEFEF;
+      padding-bottom: 10px;
+      color: #708090;
+    }
+    .iframe-wrap-2 {
+      display: inline;
+    }
+    table.company {
+    width: 600px;
+
+    }
+}

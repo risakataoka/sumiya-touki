@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<title>お問い合わせフォーム : 確認画面 | 土地家屋調査士すみや事務所</title>
+</head>
+<body>
+	<div id="body">
+		<div class="container-fluid" style="padding: 0;">
+			<div class="contact2">
+				<div class="img-contact-area">
+					<img src="../images/contact.png" alt="お問い合わせ" height="50" width="1110" class="img-fluid" style="margin-top: 10px;">
+				</div>
+
+				<ul class="contact-ul">
+					<li>以下の内容でよろしければ「送信する」ボタンを押して下さい。</li>
+				</ul>
+				<div id="form-tbl">
+					<table id="form">
+						<!-- cell -->
+						<tr>
+							<th>!key!</th>
+							<td>!val!</td>
+						</tr>
+						<!-- /cell -->
+					</table>
+					<form action="!mail_cgi!" method="post">
+						<!-- hidden -->
+						<div class="btn">
+							<input type="submit" value="送信する &gt;" class="contactButton3" >
+						</div>
+						<div class="btn">
+						　<input type="button" value="&lt; 前に戻る" class="contactButton4" onclick="history.back()">
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
